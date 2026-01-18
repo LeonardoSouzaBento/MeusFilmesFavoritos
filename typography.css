@@ -1,0 +1,106 @@
+body {
+ font-size: 1.0875rem;
+}
+@media (min-width: 640px) {
+ body{font-size: 1.09375rem;}
+}
+@media (min-width: 768px) {
+ body{font-size: 1.095rem;}
+}
+@media (min-width: 1024px) {
+ body{font-size: 1.097500rem;}
+}
+@media (min-width: 1280px) {
+ body{font-size: 1.10rem;}
+}
+@media (min-width: 1536px) {
+ body{font-size: 1.1025rem;}
+}
+
+.smaller-text {font-size: var(--text-xs);}
+
+.small-text, label {font-size: var(--text-sm);}
+
+.normal-text, li, input, select, option {font-size: var(--text-base);}
+
+.large-text {font-size: var(--text-lg);}
+
+h6 {font-size: var(--text-h6);}
+
+h5 {font-size: var(--text-h5);}
+
+h4 {font-size: var(--text-h4);}
+
+h3 {font-size: var(--text-h3);}
+
+h2 {font-size: var(--text-h2);}
+
+h1 {font-size: var(--text-h1);}
+
+.h1-hero {font-size: var(--text-h1-hero);}
+
+button, a {font-size: var(--text-button);}
+
+.small-button {font-size: var(--text-sm-button);}
+
+.large-button {font-size: var(--text-lg-button);}
+
+/* LARGURA MÁXIMA DO CORPO */
+p {max-width: 65ch;}
+@media (min-width: 640px){p {max-width: 73ch;}}
+@media (min-width: 768px){p {max-width: 75ch;}}
+@media (min-width: 1024px){p {max-width: 78ch;}}
+@media (min-width: 1280px){p {max-width: 82ch;}}
+@media (min-width: 1536px){p {max-width: 85ch;}}
+
+/* PESOS */
+input::placeholder {
+  font-weight: 300; /* light */
+}
+
+.helper-text,
+.description-text {
+  font-weight: 300;
+}
+
+p, li, input, select, option {
+  font-weight: 400;
+}
+
+a, h6, h5, h4, button, 
+.small-button, .big-link, .small-link {
+  font-weight: 600;
+}
+
+h3, h2 { font-weight: 600;}
+
+h1, strong { font-weight: 700;}
+
+/* LINE HEIGHTS */
+.h1-hero { line-height: 1.1; }
+h1 { line-height: 1.17; }
+h2 { line-height: 1.22; }
+h3 { line-height: 1.28; }
+h4 { line-height: 1.32; }
+h5 { line-height: 1.38; }
+h6 { line-height: 1.44; }
+
+p,
+li,
+input,
+select,
+option {
+  @apply leading-normal;
+}
+label { @apply leading-[1.36]; }
+button { @apply leading-[1.12]; }
+
+.large-text { line-height: 1.68; }
+.normal-text { line-height: 1.5; }
+
+.large-text { @apply leading-[1.45]; }
+.normal-text { @apply leading-[1.48]; }
+.small-text { @apply leading-[1.51]; }
+.smaller-text { @apply leading-[1.54]; }
+
+
